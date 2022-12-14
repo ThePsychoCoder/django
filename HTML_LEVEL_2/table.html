@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+  </head>
+  <body>
+    <!--  Let's make a table -->
+    <table border="1">
+      <thead>
+        <th>Number</th>
+        <th>Color</th>
+        <th>Country</th>
+      </thead>
+      <!--  tr is a Table Row -->
+      <tr>
+        <!-- These are table cells -->
+        <td>200</td>
+        <td>Blue</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>250</td>
+        <td>Red</td>
+        <td>France</td>
+      </tr>
+
+    </table>
+
+
+
+    <br>
+
+
+    <table border="2">
+
+
+    <thead>
+      <th>Country Name</th>
+      <th>Country Flag</th>
+      <th>GDP (Millions of USD)</th>
+    </thead>
+    <tr>
+      <td>USA</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt=""></td>
+      <td> 18,561,930</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt=""></td>
+      <td> 2,250,990</td>
+    </tr>
+    <tr>
+      <td>United Kingdom</td>
+      <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt=""></td>
+      <td>2,649,890</td>
+    </tr>
+
+    </table>
+
+    <br>
+
+    <!--  You can specify the input type-->
+    <!--  Reference Links-->
+    <!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+    <!--Actions: where we send the data -->
+    <!--Method: get/post HTTP method -->
+    <form>
+
+
+    <h1>Log In</h1>
+    <h2>Please Input your Password and Email</h2>
+    <input type="email" name="useremail" value="Email Here">
+    <input type="password" name="password" value="Password">
+    <input type="submit" >
+
+    <h1>Choose a Color!</h1>
+    <h2>Click on the Button when ready</h2>
+    <input type="color" >
+    <h2>Enter some Text!</h2>
+    <input type="text" name="" value="Text goes here">
+
+    </form>
+
+    <br>
+
+    <!--  You can specify the input type-->
+    <!--  Reference Links-->
+    <!-- http://www.w3schools.com/TAGs/att_input_type.asp -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+    <!--Actions: where we send the data -->
+    <!--Method: get/post HTTP method -->
+
+    <h1>Log In</h1>
+    <h2>Please Input your Password and Email</h2>
+
+    <!-- Two ways of using a Label-->
+    <!-- Nested -->
+    <!--  for and id connection-->
+
+    <form action="http://www.google.com" method="get">
+
+      <label>
+         EMAIL:
+         <input type="email" name="useremail" placeholder="Email Here">
+      </label>
+
+
+      <label >
+        PASSWORD:
+      <input type="password" name="password" placeholder="Password">
+      </label>
+
+      <!-- Validation -->
+      <!--  Usually do a lot more validation with Backend-->
+      <!--  Use the attribute: required to require input-->
+
+      <label for="userinput">TEXT:</label>
+
+
+      <input type="text" id="userinput"name="input" placeholder="Enter Text Here" required>
+
+      <input type="submit" >
+
+    </form>
+    <br>
+
+    <h1>Hotel Feedback Form!</h1>
+
+      <!-- Things we will cover
+      1. Linking Radio Buttons
+      2. Drop-down Menus
+      3. Text Area inputs -->
+
+
+        <form method="get">
+          <h3>Are you from inside the India? Or outside?</h3>
+          <label for="inside">Location:</label>
+          <input type="radio" id="inside" name="loc_choice" value="">
+
+          <label for="outside">Outside:</label>
+          <input type="radio" id="outside" name= "loc_choice" value="out">
+
+
+          <p>How was your service? (3 being the best)</p>
+          <select name="stars">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+          </select>
+
+
+          <p>Any other Feedback?</p>
+
+          <textarea name="name" rows="8" cols="80"></textarea>
+
+          <br>
+          <br>
+          <input type="submit" name="" value="Submit Feedback">
+
+
+        </form>
+
+
+        <br>
+        <br>
+        <h1>Course Sign Up Page</h1>
+   <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+
+       <form method="get">
+
+         <label for="FirstName">First Name:</label>
+         <input type="text" id="FirstName" placeholder="First Name" required>
+
+         <label for="LastName">Last Name:</label>
+         <input type="text" id="LastName" placeholder="Last Name" required>
+         <p></p>
+
+         <label for="email">Email:</label>
+         <input type="email" id="email" placeholder="name@email.com">
+
+         <label for="pass">Password:</label>
+         <input type="password" id="pass" >
+
+         <p>Are you over the age of 18?</p>
+         <label for="yes">Yes:</label>
+         <input type="radio" name="Over18" id="yes" value="yesOver">
+
+         <label for="no">No:</label>
+         <input type="radio" name="Over18" id="no" value="noOver">
+
+
+         <p>Do you have a Credit Card or PayPal?</p>
+         <select name="payment">
+           <option value="cc">Credit Card</option>
+           <option value="pp">PayPal</option>
+           <option value="gp">googlepay</option>
+         </select>
+
+         <p>please do yourpayment</p>
+         <input type="submit" name="" value="Submit Feedback">
+
+
+       </form>
+
+
+  </body>
+</html>
